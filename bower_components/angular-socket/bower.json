@@ -1,0 +1,28 @@
+{
+  "name": "angular-socket",
+  "version": "0.2.0",
+  "homepage": "https://github.com/mbilokonsky/AngularSocket",
+  "authors": [
+    "mykola <mbilokonsky@gmail.com>"
+  ],
+  "description": "An angular wrapper that wraps websocket connections in a service.",
+  "main": "main.js",
+  "keywords": [
+    "sockets",
+    "websockets",
+    "angular",
+    "messaging",
+    "remoting"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+        "angular": "~1.2.6"       
+    }
+}

@@ -1,0 +1,8 @@
+table {
+    border-collapse: collapse;
+}
+
+
+div { border: 1px dotted #ddd;}
+
+p {margin-bottom: 0.6em;}

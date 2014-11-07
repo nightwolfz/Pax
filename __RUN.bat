@@ -1,0 +1,1 @@
+C:\www\node_modules\.bin\nodemon --harmony-generators app.js
