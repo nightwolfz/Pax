@@ -25,6 +25,6 @@ Run using
 > node_modules/.bin/nodemon --harmony-generators app.js
 
 
-![alt tag](https://raw.githubusercontent.com/nightwolfz/Pax/master/public/img/preview.png)
+![alt tag](https://raw.githubusercontent.com/nightwolfz/Pax/master/public/assets/preview.png)
 
 **EXPERIMENTAL. USE AT OWN RISK.**
