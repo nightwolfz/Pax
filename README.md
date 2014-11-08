@@ -8,8 +8,11 @@ I will use this project to create a routing manager for websocket event handling
 Note that the project uses the --harmony flag on nodeJS to allow ECMAScript 6 syntax.
 
 Install npm, bower components and node modules
+
 > npm install -g bower
+
 > bower install
+
 > npm install
 
 Run using
