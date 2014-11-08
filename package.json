@@ -12,12 +12,17 @@
     "start": "node --harmony app.js"
   },
   "dependencies": {
+    "co": "^3.1.0",
     "co-views": "^0.2.0",
     "ejs": "^1.0.0",
     "koa-framework": "^2.1.0",
     "koa-socket": "^0.3.0",
     "koa-static": "^1.4.7",
     "koa-views": "^2.1.0",
-    "nodemon": "^1.2.1"
+    "lodash": "^2.4.1",
+    "mysql": "^2.5.3",
+    "nodemon": "^1.2.1",
+    "sequelize": "^2.0.0-rc2",
+    "sqlite3": "^3.0.2"
   }
 }

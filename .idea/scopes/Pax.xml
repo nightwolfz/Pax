@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Pax" pattern="!file[www]:.idea//*&amp;&amp;!file:.gitattributes&amp;&amp;!file:.gitignore&amp;&amp;!file:__RUN.bat&amp;&amp;!file:bower.json&amp;&amp;!file:package.json&amp;&amp;!file:README.md" />
+</component>

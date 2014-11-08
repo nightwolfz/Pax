@@ -38,17 +38,20 @@
   </head>
   <body style="width: 640px; margin:0 auto;">
 
-    <div class="row clear" ng-controller="StatsController">
+    <div class="header row clear" ng-controller="StatsController">
       <div class="col col-2">
-        <b>{{stats.turns}}</b> Turns
+        <div class="top-menu-turns">
+          <span>{{stats.turns}}</span>
+          <small>turns</small>
+        </div>
       </div>
-      <div class="col col-9">
-        <b>{{stats.metal}}</b> Metal
-        <b>{{stats.energy}}</b> Energy
-        <b>{{stats.food}}</b> Food
+      <div class="col col-8">
+        <b>{{stats.metal | number}}</b> Metal<br>
+        <b>{{stats.energy | number}}</b> Energy<br>
+        <b>{{stats.food | number}}</b> Food
       </div>
-      <div class="col col-1">
-        <button ng-click="showMenu()">III</button>
+      <div class="col col-2">
+        <button class="top-menu-button" ng-click="showMenu()">III</button>
       </div>
     </div>
 

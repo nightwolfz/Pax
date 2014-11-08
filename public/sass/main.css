@@ -1,8 +1,65 @@
+body {
+    background: #000;
+}
+
 table {
     border-collapse: collapse;
 }
 
-
-div { border: 1px dotted #ddd;}
-
 p {margin-bottom: 0.6em;}
+
+.header {
+    color: #fff;
+    background: #E22F88;
+    padding-bottom: 0;
+}
+
+
+.header .top-menu-button:hover { background: #c62879; color: #57092A; }
+.header .top-menu-button:active { background: #f42e98; box-shadow: -1px -1px 2px #333; }
+.header .top-menu-button {
+    color: #5E1131;
+    font-size: 64px;
+    width: 72px;
+    height: 72px;
+    padding: 0;
+    background: #a1245e;
+    border: 1px solid #7b1c48;
+    box-shadow: 1px 1px 2px #333;
+    margin-top: -9px;
+    float: right;
+}
+
+.top-menu-turns {
+    font-size: 56px;
+    font-weight: bold;
+    padding: 8px;
+    text-align: center;
+}
+.top-menu-turns small {
+    font-size: 14px;
+}
+
+.container {
+    background: #fff;
+}
+
+.container div {
+    /*border: 1px dotted #eee;*/
+}
+
+.box {
+    border: 1px solid #eee;
+}
+
+button:hover {background: #c62879;}
+button:active {background: #c62879; box-shadow: -1px -1px 2px #333;}
+button {
+    color: #57092A;
+    background: #a1245e;
+    font-size: 49px;
+    font-weight: bold;
+    border: 1px solid #7b1c48;
+    padding: 8px 16px;
+    box-shadow: 1px 1px 2px #888;
+}

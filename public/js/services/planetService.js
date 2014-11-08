@@ -3,6 +3,10 @@
 // Demonstrate how to register services
 angular.module('pax.services').service('planetService', planetService);
 
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 
 // Contains all the information about the user
 function planetService(socket){
@@ -15,11 +19,13 @@ function planetService(socket){
         "Desert": {metal:0, energy: 30, food:-60, type:2},
     };
 
+    planetService.SEED = function(){
+        socket.emit('seed:everything');
+    };
+
     planetService.getPlanets = function(){
-        return [
-            {id:1, orbit:1, system:1, planet: planetService.planets["Terran"]},
-            {id:2, orbit:2, system:1, planet: planetService.planets["Desert"]}
-        ];
+        console.debug("planetService.getPlanets");
+        socket.emit('planets:get', {});
     };
 
     return planetService;

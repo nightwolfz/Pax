@@ -7,4 +7,8 @@ I will use this project to create a routing manager for websocket event handling
 
 Note that the project uses the --harmony flag on nodeJS to allow ECMAScript 6 syntax.
 
+Run using
+
+> node_modules/.bin/nodemon --harmony-generators app.js
+
 **EXPERIMENTAL. USE AT OWN RISK.**
