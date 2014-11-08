@@ -3,6 +3,7 @@ var Sequelize = require('sequelize');
 var render = require('co-views')('./public', { map: { html: 'ejs' }});
 var db = require('./models');
 var serve = require('koa-static');
+var sass = require('koa-sass');
 var KeyGrip = require('keygrip');
 var route = require('koa-route');
 var koa = require('koa');

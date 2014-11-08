@@ -10,10 +10,10 @@ function userService(socket){
   var userService = {};
 
   userService.stats = {
-      turns: null,
-      metal: null,
-      energy: null,
-      food: null
+      turns: 99,
+      metal: 0,
+      energy: 0,
+      food: 0
     };
 
   return userService;

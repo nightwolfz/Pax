@@ -1,0 +1,96 @@
+body {
+    background: #000;
+    /*width: 640px;
+    margin:0 auto;*/
+    font-size: 24px;
+    /*font-family: 'Economica', "Helvetic Neue", Helvetica, Arial;*/
+    font-family: 'Yanone Kaffeesatz', "Helvetic Neue", Helvetica, Arial;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+p {margin-bottom: 0.6em;}
+
+
+header div:nth-child(2) {
+    color: #fff;
+    background: #333;
+    padding-bottom: 0;
+    height: auto;
+}
+
+
+header .top-menu-button:hover { background: #c62879; color: #57092A; }
+header .top-menu-button:active { background: #f42e98; box-shadow: -1px -1px 2px #333; }
+header .top-menu-button {
+    color: #5E1131;
+    font-size: 64px;
+    width: 72px;
+    height: 72px;
+    padding: 0;
+    background: #a1245e;
+    border: 1px solid #7b1c48;
+    box-shadow: 1px 1px 2px #333;
+    margin-top: -9px;
+    /*float: right;*/
+}
+
+header .columns {
+    line-height: 30px;
+}
+
+.top-menu-turns {
+    color: #fff;
+    background: #E22F88;
+    border: 1px dashed #333;
+    font-size: 56px;
+    font-weight: bold;
+    padding: 16px;
+    text-align: center;
+    line-height: 16px;
+    width: 1.8em;
+}
+
+.top-menu-turns span {
+    line-height: 40px;
+}
+
+.top-menu-turns small {
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.container {
+    /*background: #fff;*/
+    border: 1px dashed #555;
+    background: url('../img/bg.jpg') no-repeat;
+}
+
+.container div {
+    /*border: 1px dotted #eee;*/
+}
+
+.box {
+    border: 1px solid #eee;
+}
+
+.nopadding { padding:0 !important; }
+.nomargin { margin:0 !important; }
+
+.button:hover,
+.button:active {background: #a1245e;}
+.button {
+    color: #fff;
+    background: #c62879;
+}
+
+/* ---- Icons ---- */
+.icon-bar .item {
+    color:#fff;
+    font-size: 32px;
+}
+.icon-bar>* {
+    padding: 1.1rem;
+}

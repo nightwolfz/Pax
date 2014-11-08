@@ -3,15 +3,18 @@
 	<table>
 		<tr ng-repeat="planet in planets">
 			<td>
+				<p style="font-size: 72px;line-height: 65px;">O</p>
+			</td>
+			<td>
 				<p>Orbit: {{planet.orbit}}</p>
 				<p>System: {{planet.system}}</p>
 				<p>Planet: {{planet.planet}}</p>
 			</td>
+
 		</tr>
 	</table>
 
 
-	<button ng-click="SEED()">SEED</button>
-
+	<button class="button radius expand" ng-click="SEED()">SEED</button>
 
 </section>
