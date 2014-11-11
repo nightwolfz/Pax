@@ -9,6 +9,11 @@ module.exports = function(socket){
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
+    function getRandomPlanetType(){
+        var planetTypes = db.Planet.rawAttributes.planet.values;
+        return planetTypes[Math.floor(Math.random()*planetTypes.length)];
+    }
+
     this.everything = co(function*()
     {
         console.log('-------------- SEED --------------');
@@ -24,17 +29,19 @@ module.exports = function(socket){
                 email:"test@test.com"
             });
 
-            var addPlanet = function*(parent, orbit){
+            console.log(getRandomPlanetType());
+
+            var addPlanet = function*(parent, orbit, planet){
                 parent.addPlanet(yield db.Planet.create({
                     orbit:  orbit,
                     system: 1,
-                    planet: "Terran"
+                    planet: planet
                 }));
             };
 
-            yield addPlanet(user, getRandomInt(1,9));
-            yield addPlanet(user, getRandomInt(1,9));
-            yield addPlanet(user, getRandomInt(1,9));
+            yield addPlanet(user, getRandomInt(1,9), getRandomPlanetType());
+            yield addPlanet(user, getRandomInt(1,9), getRandomPlanetType());
+            yield addPlanet(user, getRandomInt(1,9), getRandomPlanetType());
 
             // Return new planets
             socket.emit('planets:get', _.pluck(yield db.Planet.findAll({})));
