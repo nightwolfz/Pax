@@ -1,3 +1,4 @@
+var colors    = require('colors'); // yeah extending String but meh, not prod code
 var fs        = require("fs");
 var path      = require("path");
 var Sequelize = require("sequelize");
@@ -23,6 +24,8 @@ Object.keys(db).forEach(function(modelName) {
 
 sequelize.sync().then(function() {
     console.log("Connected to db...");
+}).catch(function(e){
+    console.log(e.red);
 });
 
 db.sequelize = sequelize;

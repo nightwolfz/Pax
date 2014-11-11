@@ -5,6 +5,10 @@ module.exports = function(socket){
         co = require('co');
 
 
+    function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
     this.everything = co(function*()
     {
         console.log('-------------- SEED --------------');
@@ -28,9 +32,12 @@ module.exports = function(socket){
                 }));
             };
 
-            yield addPlanet(user, 1);
-            yield addPlanet(user, 2);
-            yield addPlanet(user, 3);
+            yield addPlanet(user, getRandomInt(1,9));
+            yield addPlanet(user, getRandomInt(1,9));
+            yield addPlanet(user, getRandomInt(1,9));
+
+            // Return new planets
+            socket.emit('planets:get', _.pluck(yield db.Planet.findAll({})));
 
         } catch(e){console.log(e);}
 
